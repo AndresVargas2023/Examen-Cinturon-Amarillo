@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 5px solid blueviolet;
+}
+.color-violetaclaro{
+    color: blueviolet;
+}
+.color-white{
+    color: white;
+}
+.color-violeta{
+    background-color: violet;
+    padding: 10px;
+}
+#color-violeta{
+    border: 4px solid violet;
+    width: 40px;
+}
+.color-limon{
+    background-color: lime;
+    padding: 10px;
+    box-shadow: 2px 2px 0px 0px;
+}
+header > div{
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+}
+header > div > img{
+    height: 35px;
+}
+header > div > p {
+    color: white;
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    vertical-align:middle;
+    justify-content: space-between;
+    width: 100%;
+}
+nav > img {
+    width: 41em;
+}
+button {
+    border: none;
+    background-color: wheat;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 64%;
+
+}
+main > div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.marcador{
+    border: 4px solid black;
+    width: 40px;
+    height: 0px;
+}
+section{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+
+}
+
+aside{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+article > img {
+    width: 100%;
+}
+article div img {
+    width: 25px;
+}
+#precio-anterior, #precio-anterior2{
+    font-size: 80%; 
+    color: gray;
+    text-align: end;
+    text-decoration: line-through;
+}
+.name{
+    padding: 5px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="color-white">Gaming<span class="color-violetaclaro">Dojo</span></h1>
+        <div>
+            <select id="money" name="money" onchange="changeMoney()">
+                <option value="euro">Euro €</option>
+                <option value="dolar">Dolar $</option>
+            </select>
+            <img src="./images/cart-light.png" alt="cart-light">
+            <p id="orderCount">0</p>
+            <img src="./images/search-light.png" alt="search-light">
+        </div>
+    </header>
+    <main>
+        <h3>Highlits</h3>
+        <nav>
+            <button onclick="gamingDemo1()"><img src="./images/chevron-left.png" alt="chevron-left"></button>
+            <img src="./images/stonepunk.png" alt="stonepunk" id="gamingChange">
+            <button onclick="gamingDemo2()"><img src="./images/chevron-rigth.png" alt="chevron-rigth"></button>
+        </nav>
+        <div>
+            <div class="marcador"></div>
+            <div class="marcador" id="color-violeta"></div>
+            <div class="marcador"></div>
+            <div class="marcador"></div>
+        </div>
+        <section>
+            <article>
+                <img src="./images/cafe-neko.png" alt="">
+                <p class="name">Cafe Neko: Gold Edition</p>
+                <div>
+                    <img src="./images/windows.png" alt="windows">
+                    <img src="./images/apple.png" alt="apple">
+                </div>
+                <aside>
+                    <button class="color-violeta">-20%</button>
+                    <div>
+                        <p class="precio" id="precio-anterior">14.98 €</p>
+                        <p class="precio">10.49 €</p>
+                    </div>
+                    <button class="color-limon" onclick="selectOrder()">Buy</button>
+                </aside>
+            </article>
+            <article>
+                <img src="./images/pixel-ninjas-2.png" alt="pixel-ninjas-2">
+                <p class="name">Pixel Ninjas 2</p>
+                <div>
+                    <img src="./images/windows.png" alt="windows">
+                    <img src="./images/apple.png" alt="apple">
+                </div>
+                <aside>
+                    <button class="color-violeta">-10%</button>
+                    <div>
+                        <p class="precio" id="precio-anterior2">8.19 €</p>
+                        <p class="precio">7.39 €</p>
+                    </div>
+                    <button class="color-limon" onclick="selectOrder()">Buy</button>
+                </aside>
+            </article>
+            <article>
+                <img src="./images/stonepunk.png" alt="">
+                <p class="name">Stonepunk 10000 BCE</p>
+                <div>
+                    <img src="./images/windows.png" alt="windows">
+                    <img src="./images/apple.png" alt="apple">
+                    <img src="./images/linux.png" alt="linux" onclick="suportLinux()">
+                </div>
+                <aside>
+                    <button class="color-violeta">New</button>
+                    <div>
+                        <p class="precio">19.99 €</p>
+                    </div>
+                    <button class="color-limon" onclick="selectOrder()">Buy</button>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
